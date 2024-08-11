@@ -1,0 +1,88 @@
+//Crie um programa que utilize o console.log para exibir uma mensagem de boas-vindas.
+console.log("Mensagem de Boas  Vindas");
+
+//Crie uma variável chamada "nome" e atribua a ela o seu nome. 
+//Em seguida, utilize o console.log para exibir a mensagem "Olá, [seu nome]!" no console do navegador.
+let nome_console = "Andre Console";
+console.log(`Olá, ${nome_console}!`);
+
+//Crie uma variável chamada "nome" e atribua a ela o seu nome. 
+//Em seguida, utilize o alert para exibir a mensagem "Olá, [seu nome]!" .
+let nome_alert = "Andre Alert";
+alert(`Olá, ${nome_alert}!`);
+
+//Utilize o prompt e faça a seguinte pergunta: Qual a linguagem de programação que você mais gosta?. 
+//Em seguida, armazene a resposta em uma variável e mostre no console do navegador.
+let linguagemPreferida = prompt('Qual a sua linguagem de programação favorita?');
+console.log(`A linguagem de programação favorita do ${nome_console} é ${linguagemPreferida}`);
+
+//Crie uma variável chamada "valor1" e outra chamada "valor2", 
+//atribuindo a elas valores numéricos de sua escolha. 
+//Em seguida, realize a soma desses dois valores e armazene o resultado em uma terceira 
+//variável chamada "resultado". Utilize o console.log para 
+//mostrar a mensagem "A soma de [valor1] e [valor2] é igual a [resultado]." no console.
+let valor_um = prompt(`Informe o primeiro valor:`);
+let valor_dois = prompt(`Informe o segundo valor:`);
+let resultado_soma = parseInt(valor_um) + parseInt(valor_dois);
+console.log(`A soma de ${valor_um} e ${valor_dois} é igual a ${resultado_soma}.`)
+
+//Crie uma variável chamada "valor1" e outra chamada "valor2", atribuindo a elas valores 
+//numéricos de sua escolha. Em seguida, realize a subtração desses dois valores e armazene o 
+//resultado em uma terceira variável chamada "resultado". Utilize o console.log para mostrar a
+// mensagem "A diferença entre [valor1] e [valor2] é igual a [resultado]." no console.
+let valor1 = 17;
+let valor2 = 11;
+let resultado_subtracao = valor1 - valor2;
+console.log(`A diferença entre ${valor1} e ${valor2} é igual a ${resultado_subtracao}`);
+
+//Peça ao usuário para inserir sua idade com prompt. 
+//Com base na idade inserida, utilize um if para verificar se a pessoa é maior ou menor de idade, 
+//exibindo uma mensagem apropriada no console.
+let idade_usuario = prompt('Informe sua idade: ')
+let mensagem = idade_usuario > 17 ? "você MAIOR de idade!" : "VOCÊ É menor DE IDADE!"
+console.log(mensagem);
+
+//Crie uma variável "numero" e peça um valor com prompt verifique se é positivo, 
+//negativo ou zero. Use if-else para imprimir a respectiva mensagem.
+let numero_neg_pos = prompt("Informe um número:");
+if (numero_neg_pos == 0){
+    console.log ("Esse número é zero!");
+} else {
+    if (numero_neg_pos > 0){
+        console.log ("Esse número é positivo (+)!");
+    } else {
+        console.log ("Esse número é negativo (-)!");
+    }
+}
+
+//Use um loop while para imprimir os números de 1 a 10 no console.
+let contador = 1;
+while (contador <10){
+    console.log(contador);
+    contador++;
+}
+
+//Crie uma variável "nota" e atribua um valor numérico a ela. 
+//Use if-else para determinar se a nota é maior ou igual a 7 e exiba "Aprovado" ou "Reprovado" no console.
+let nota = 5;
+if (nota >= 7){
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+
+//Use o Math.random para gerar qualquer número aleatório e exiba esse número no console.
+let num_aleatorio = parseInt(Math.random() * 500+1);
+console.log (`Número aleatório ${num_aleatorio}`);
+
+//Use o Math.random para gerar um número inteiro entre 1 e 10 e exiba esse número no console.
+let num_1_10 = parseInt(Math.random() * 10+1);
+console.log (`Número aleatório ${num_1_10}`);
+
+//Use o Math.random para gerar um número inteiro entre 1 e 1000 e exiba esse número no console.
+let num_1_1000 = parseInt(Math.random() * 1000+1);
+console.log (`Número aleatório ${num_1_1000}`);
+
+
+
+
